@@ -1,3 +1,4 @@
+
 html{
   margin: auto;
   width: 100%;
@@ -12,21 +13,25 @@ nav{
     background-color: black;
   }
   
-}
+
 h1 {
   font-size: 50px;
   text-align:center;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color:tan;
+  font-family: 'BioRhyme', serif;
+  text-shadow: 2px 2px white;
+
 }
 h2{
   text-align:center;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color:tan;
+  font-family:'BioRhyme', serif;
+  color:black;
+  text-shadow: 2px 2px white;
 }
 body{
   /*background-color: tan;*/
   text-align: center;
+  background-image: url(./images/laptop.png);
+
   
 
 
@@ -44,10 +49,18 @@ h3{
 }
 p{
   text-align:center;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Space Mono', monospace;
 
 }
 ol, ul{
+  margin: 0 auto;
+  list-style-position:inside;
+  padding-left: 0;
+  display:inline-block;
+  /* list-style-type: none; */
+}
+ul{
   margin: 0 auto;
   list-style-position:inside;
   padding-left: 0;
@@ -56,7 +69,8 @@ ol, ul{
 }
 li{
   text-align:left;
-  
+  font-family: BioRhyme, serif;
+  font-size:15px;
 }
 
 a{
@@ -201,6 +215,12 @@ form button {
   margin: 0px 8px 10px 0;
 }
 
+img {
+  width: 80%;
+  height: 80%;
+  border-radius: 16px;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 *{
 /*margin: 0;*/
@@ -221,14 +241,15 @@ body{
   
     display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .container .box{
     position: relative;
     width: 320px;
+    height: 26em;
     background:#fff;
-    padding:100px 40px 60px;
+    /* padding:100px 40px 60px; */
     box-shadow: 0 15px 45px rgba(0,0,0,.1);
 
 }
@@ -281,7 +302,7 @@ body{
 
 .container .box p{
     position:relative;
-    font-size:1.5em;
+    font-size:1em;
     z-index: 2;
     color:#555;
     transition:0,5s;
