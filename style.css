@@ -125,14 +125,7 @@ a:active{
   }
 
 
-@media all and (min-width: 450px) {
-.wrapper{
-  width:80%;
-  margin:auto;
-  
-  
-}
-}
+
 
 
 form label{
@@ -313,3 +306,62 @@ body{
     color: #fff;
 }
 
+@media all and (min-width: 450px) {
+  .wrapper{
+    width:80%;
+    margin:auto;
+    
+    
+  }
+  
+  }
+
+  /* @media all and (min-width: 550px){
+    .container .box p {
+    
+      font-size: 12px;
+      
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: auto 21%;
+  }
+  
+  
+  } */
+
+  @media all and (min-width: 816px){
+    .container .box p {
+    
+      font-size: 12px;
+      
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: inherit;
+}
+  }
+  
+@media all and (min-width: 950px){
+  .container .box p {
+    
+    font-size: 14px;
+    
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: inherit;
+}
+}
+  @media all and (min-width: 1150px){
+    .container .box p {
+      font-size: 1em;
+    }
+  }
