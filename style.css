@@ -31,8 +31,8 @@ body{
   /*background-color: tan;*/
   text-align: center;
   background-image: url(./images/laptop.png);
-
-  
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
   
@@ -212,8 +212,24 @@ img {
   width: 80%;
   height: 80%;
   border-radius: 16px;
+  box-shadow: 6px 9px #00000047;
 }
 
+#bookmark{
+  background-image: url('./images/bookmarkappS.png')
+}
+
+#request{
+  
+    background-image: url(./images/request.png);
+    /* background-repeat: no-repeat; */
+    background-position: right -251px;
+
+}
+
+#anime{
+  background-image: url(./images/anime.png)
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 *{
 /*margin: 0;*/
@@ -243,7 +259,9 @@ body{
     height: 26em;
     background:#fff;
     /* padding:100px 40px 60px; */
-    box-shadow: 0 15px 45px rgba(0,0,0,.1);
+    /* box-shadow: 0 15px 45px rgba(0,0,0,.1); */
+    border: solid silver;
+    box-shadow: 6px 6px #00000070;
 
 }
 
@@ -254,7 +272,7 @@ body{
     left:0;
     width:100%;
     height:100%;
-    background:#ff226d;
+    background:rgb(45, 45, 250);
     transform:scaleY(0);
     transform-origin:top;
     transition: transform 0.5s;
@@ -269,8 +287,8 @@ body{
 
 .container .box h2{
     position: absolute;
-    left:40px;
-    top:60px;
+    left:4px;
+    top:-12px;
     font-size:4em;
     font-weight: 800;
     z-index:1;
@@ -305,45 +323,90 @@ body{
 .container:hover .box p{
     color: #fff;
 }
-
-@media all and (min-width: 450px) {
+@media all and (max-width: 550px) {
   .wrapper{
     width:80%;
     margin:auto;
     
     
   }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: auto 21%; */
+}
+.container .box {
+ 
+  height: 46em;
   
+}
+.container .box h2 {
+  position: absolute;
+  left: 0px;
+  top: -8px;
+  font-size: 4em;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 0.1;
+  transition: 0.5s;
+}
   }
 
-  /* @media all and (min-width: 550px){
+@media  (min-width: 450px) {
+  .wrapper{
+    width:80%;
+    margin:auto;
+    
+    
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.container .box {
+ 
+  height: 50em;
+  
+}
+
+  }
+
+  @media all and (min-width: 550px){
     .container .box p {
     
-      font-size: 12px;
+      /* font-size: 12px; */
       
     }
 
     .container {
-      display: flex;
+      /* display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin: auto 21%;
+      margin: auto 21%; */
   }
   
   
-  } */
+  }
 
   @media all and (min-width: 816px){
     .container .box p {
     
-      font-size: 12px;
+      font-size: 15px;
       
     }
 
     .container {
       display: flex;
       justify-content: space-between;
-      flex-wrap: inherit;
+      /* flex-wrap: inherit; */
+}
+.container .box {
+ 
+  height: 44em;
+  
 }
   }
   
