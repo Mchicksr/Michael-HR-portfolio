@@ -29,6 +29,7 @@
                <li><a href="#">Home</a></li>
                <li><a href="#about">About</a></li>
                <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#slideShow">Screenshots</a></li>
                <li><a href="#contact">Contact</a></li>
             </ul>
          </nav>
@@ -80,8 +81,8 @@
                <p>An app designed to save, rate, and bookmark your favorite websites! </p>
                <h3>Details</h3>
                <p>Created in jQuery, the bookmark app accesses an API held on Heroku, that allows the user to make posts calls to store websites links and the app automatically makes the GET request when loaded to display all bookmarks. </p>                
-                <p> <a href=https://github.com/Mchicksr/The-Bookmark-App><i class="fab fa-github-square"></i></a></p>
-                 <p> <a href="https://mchicksr.github.io/The-Bookmark-App/">Bookmark App</a></p>
+                <p> <a target="_blank" href=https://github.com/Mchicksr/The-Bookmark-App><i class="fab fa-github-square"></i></a></p>
+                 <p> <a target="_blank" href="https://mchicksr.github.io/The-Bookmark-App/">Bookmark App</a></p>
             </div>
 
             <div class="box" id="request">
@@ -91,23 +92,64 @@
                
                <h3>Details</h3>
                <p>Created with React and Node, The Request app is gives the users being the guests atending the event the ability to posts songs that can be rated bu other guests. Alos send private messages like comments and reviews to the dj. server and database hosted by heroku. </p>
-                  <p> <a href="https://github.com/Mchicksr/The-Request-App-client"><i class="fab fa-github-square"></i></a></p>
-                  <p> <a href="https://request-app-client.vercel.app//">Request App</a></p>
+                  <p> <a target="_blank" href="https://github.com/Mchicksr/The-Request-App-client"><i class="fab fa-github-square"></i></a></p>
+                  <p> <a target="_blank" href="https://request-app-client.vercel.app//">Request App</a></p>
             </div>
             <div class="box" id="anime">
                <h2>03</h2>
                <h3>Otaku Risuto</h3>
                <p>This app allows you to search anime’s and create your own personalized lists. Share it with your friends and comment on the anime lists they created. You can also you are anime roulette feature to choose an anime at random</p>              
                 <h3>Details</h3>
-                <p>This App was created using React and Node. this was a team effort implementing a login for users, accessing two API's and more. one API to give the information is from 'kitsu Api' and the information made by the user is from a server made by my team and I. all design is pure vanilla CSS and javascript. </p>                  <p> <a href="https://github.com/Cap3-Nate-Chad-Brandon-Michael-Josh/OtakuRisuto"><i class="fab fa-github-square"></i></a></p>
-                  <p> <a href=" https://otaku-risuto.vercel.app/">OtakuRisuto</a></p>
+                <p>This App was created using React and Node. this was a team effort implementing a login for users, accessing two API's and more. one API to give the information is from 'kitsu Api' and the information made by the user is from a server made by my team and I. all design is pure vanilla CSS and javascript. </p>                  
+                <p> target="_blank" <a href="https://github.com/Cap3-Nate-Chad-Brandon-Michael-Josh/OtakuRisuto"><i class="fab fa-github-square"></i></a></p>
+                  <p> <a target="_blank" href=" https://otaku-risuto.vercel.app/">OtakuRisuto</a></p>
             </div>
             
          </div>    
       </section>
 
    </div>
+   <!--  -->
 
+   <div class="SS">
+
+<div id="slideShow">
+   <h2>Screen Shots</h2>
+   
+ </div>
+ 
+ <div class="content display-container">
+ 
+ <div class="container mySlides">
+   <img src="./images/bookmarkappS.png" style="width:100%">
+   <p >
+     Bookmark App
+   </p>
+ </div>
+ 
+ <div class="display-container mySlides">
+   <img src="./images/request.png" style="width:100%" >
+   <p >
+     Request App
+   </p>
+ </div>
+ 
+ <div class="display-container mySlides">
+   <img src="./images/animeFull.png" style="width:100%">
+   <p >
+     Otaku Risuto
+   </p>
+ </div>
+ 
+ 
+ <button class="button display-left black" onclick="plusDivs(-1)">&#10094;</button>
+ <button class="button display-right black" onclick="plusDivs(1)">&#10095;</button>
+ 
+ </div>
+   </div>
+
+
+<!--  -->
    <div class="intro wrapper">
       <section id=contact>
          <h3>Contact Me!</h3>
@@ -140,6 +182,8 @@
          </ul>
       </article>
    </div>
+
+   <script src="index.js"></script>
 
 
 
