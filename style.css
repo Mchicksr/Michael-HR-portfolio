@@ -27,15 +27,18 @@ h2{
   color:black;
   text-shadow: 2px 2px white;
 }
+h4{
+  text-align: center;
+}
 body{
   /*background-color: tan;*/
   text-align: center;
   background-image: url(./images/laptop.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-
-  
+}
+.bg-light {
+  background-color: #4978a700 important;
 }
 #content img{
   width:1px; 
@@ -208,13 +211,35 @@ form button {
   margin: 0px 8px 10px 0;
 }
 
+.wrapper{
+  padding-bottom: 35px;
+}
+
+.port {
+  width: 80%;
+  height: 80%;
+  border-radius: 16px;
+  box-shadow: 6px 9px #00000047;
+  position: relative;
+  left: 6.9rem;
+}
 img {
   width: 80%;
   height: 80%;
   border-radius: 16px;
   box-shadow: 6px 9px #00000047;
+  position: relative;
+  /* left: 2.9rem; */
 }
+.intro.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
+}
+.content.display-container {
+  text-align: center;
+}
 #bookmark{
   background-image: url('./images/bookmarkappS.png')
 }
@@ -323,6 +348,29 @@ body{
 .container:hover .box p{
     color: #fff;
 }
+.carousel {
+  position: relative;
+  left: -2rem;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  left: 25rem;
+}
+a.carousel-control-prev {
+  /* padding-left: 2rem; */
+  position: absolute;
+  left: 4rem;
+}
+
+.img-fluid {
+  width: 50%;
+  height: auto;
+}
+/* MEDIA */
+
 @media all and (max-width: 550px) {
   .wrapper{
     width:80%;
@@ -351,9 +399,45 @@ body{
   opacity: 0.1;
   transition: 0.5s;
 }
+.port {
+  /* width: 80%; */
+  /* height: 80%; */
+  /* border-radius: 16px; */
+  /* box-shadow: 6px 9px #00000047; */
+  /* position: relative; */
+  left: 25px;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+  justify-content: center;
+}
+a.nav-link {
+  text-align: center;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  left: 2rem;
+
+}
+a.carousel-control-prev {
+  /* padding-left: 2rem; */
+  position: absolute;
+  left: 3rem;
+}
+.carousel-indicators{
+  padding-left: 3em!important;
+
+}
+a.nav-link {
+  padding-left:1em!important;
+}
+img.img-fluid {
+  width: 100%;
+}
   }
 
-@media  (min-width: 450px) {
+@media(min-width: 450px) {
   .wrapper{
     width:80%;
     margin:auto;
@@ -370,6 +454,12 @@ body{
  
   height: 76em;
   
+}
+a.nav-link {
+  text-align: center;
+}
+section.carousel-up {
+  margin: 3rem auto;
 }
 
   }
